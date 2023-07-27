@@ -2,7 +2,7 @@
 
 	"modbusTCP":
 	{
-		"enable": true,
+		"enable": false,
 		"device_name": "iologik",
 		"slave_ip": "192.168.4.200",
 		"slave_port": 502,
