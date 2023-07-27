@@ -22,7 +22,7 @@ jobs:
       folder_install: install
       folder_device_app: device-app
       folder_local_vis_app: cloud-app/local-visualization
-      upload_all: 0
+      upload_all: 1
 
     steps:
     - uses: actions/checkout@v2
@@ -84,6 +84,21 @@ jobs:
           local_directory: 'tar'
           run: ${{ env.upload_install }}
 
+    - name: qbee.io file upload plot_server.service
+      uses: qbee-io/file-upload-action@v1.2
+      with:
+          token: ${{ steps.qbee-auth.outputs.token }}
+          filename: 'plot_server.service'
+          qbee_directory: '/'
+          local_directory: 'plot_server'
+
+    - name: qbee.io file upload param.cfg
+      uses: qbee-io/file-upload-action@v1.2
+      with:
+          token: ${{ steps.qbee-auth.outputs.token }}
+          filename: 'param.cfg'
+          qbee_directory: '/'
+          local_directory: 'plot_server'
 
     - name: qbee.io file upload ${{ env.src_device_app }}
       uses: qbee-io/file-upload-action@v1.2
@@ -135,9 +150,3 @@ jobs:
           mode: 'replace'
           device_or_group_id: ${{ secrets.QBEE_DEVICE_ID }}
           commit_message: 'uploading content from GitHub'
-
-
-
-
-
-
