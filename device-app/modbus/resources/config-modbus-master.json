@@ -12,7 +12,7 @@
 	},
 	"modbusRTU": {
 		"enable": true,
-		"device_name": "THD-Sensor",
+		"device_name": "PowerMeter",
 		"method": "rtu",
 		"baudrate": 9600,
 		"port": "/dev/ttyM0",
@@ -21,7 +21,7 @@
 		"stop_bits": "STOPBITS_ONE",
 		"parity": "PARITY_EVEN",
 		"polling_interval_sec": 1,
-		"modbus_template": "temperature-sensor.json"
+		"modbus_template": "pymodbus-slave"
 	},
 	"troubleshoot": {
 		"enable_debug_mode": false 
