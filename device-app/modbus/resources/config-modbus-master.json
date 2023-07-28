@@ -21,7 +21,7 @@
 		"stop_bits": "STOPBITS_ONE",
 		"parity": "PARITY_EVEN",
 		"polling_interval_sec": 1,
-		"modbus_template": "pymodbus-slave"
+		"modbus_template": "pymodbus-slave.json"
 	},
 	"troubleshoot": {
 		"enable_debug_mode": false 
