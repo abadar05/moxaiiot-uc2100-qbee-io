@@ -2,6 +2,15 @@
 # Industrial IoT on a shoestring -Solution Architecture (Python)
 
 ![](media/solution-architecture-v3.png)
+IIoT on Shoestring Project is community driven open source project (MIT License). It is designed to run on low cost small footprint embedded gateways like Moxa UC-2100 series with device managment capabilities (remote access, remote OTA updates, remote configuration, CI/CD)
+- It well designed de-coupled software architecture using mosquitto broker
+- Ready to use pub/sub secure MQTT client interface 
+- Pure python3 implementation
+- Pure MQTT implementation based on paho-mqtt
+- Ready to use Modbus TCP and Modbus RTU interface
+- Ready to use AWS IoT Core Interface to publish telemetry 
+- Qbee provides remotes access and device management capabilities 
+
 
 # Getting Started
 -	Apply now and win Free IIoT shoestring starterkit: https://pages.moxa.com/eu-uc-2100-giveaway-EN.html?utm_medium=website&utm_source=github&utm_campaign=2022-05-MEU-EN-UC-2100-Campaign
